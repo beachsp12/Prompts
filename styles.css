@@ -1,0 +1,74 @@
+/* styles.css */
+
+body {
+    background-color: #1a202c;
+    color: #a0aec0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#uploadForm,
+#searchInput,
+#categoryList,
+#promptContainer {
+    margin-bottom: 20px;
+}
+
+#uploadForm button,
+#searchInput button {
+    background-color: #2d3748;
+    color: #a0aec0;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#uploadForm button:hover,
+#searchInput button:hover {
+    background-color: #4a5568;
+}
+
+#categoryList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#categoryList li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#promptContainer {
+    border: 1px solid #2d3748;
+    padding: 20px;
+}
+
+#promptContainer p {
+    margin-bottom: 10px;
+}
+
+.message {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.message.uploadSuccess {
+    background-color: #48bb78;
+    color: #f7fafc;
+}
+
+.message.uploadFailure,
+.message.searchNoResults {
+    background-color: #e53e3e;
+    color: #f7fafc;
+}
+
+.message.copySuccess {
+    background-color: #38b2ac;
+    color: #f7fafc;
+}

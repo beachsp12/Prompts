@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Prompts</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tailwind.css">
+    <script src="scripts.js"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="p-5 bg-gray-800">
+        <h1 class="text-3xl">Search Prompts</h1>
+    </header>
+    <main class="p-5">
+        <form id="searchForm" onsubmit="event.preventDefault(); searchPrompts();">
+            <input id="searchInput" type="text" class="w-full p-2 mb-5 bg-gray-800 text-white" placeholder="Search prompts...">
+            <button type="submit" class="w-full p-2 bg-blue-500 hover:bg-blue-700 text-white">Search</button>
+        </form>
+        <div id="searchResults" class="mt-5">
+            <!-- Search results will be inserted here by the searchPrompts() function -->
+        </div>
+    </main>
+</body>
+</html>
